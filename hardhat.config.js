@@ -53,13 +53,12 @@ module.exports = {
     },
     solidity: {
         version: "0.8.9",
-        // Disabled temporary, while figuring out large verification smart contract issue
-        // settings: {
-        //   optimizer: {
-        //     enabled: true,
-        //     runs: 200
-        //   }
-        // }
+        settings: {
+          optimizer: {
+            enabled: true,
+            runs: 20
+          }
+        }
     },
     mocha: {
         timeout: 20000
